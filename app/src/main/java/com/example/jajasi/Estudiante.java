@@ -8,6 +8,7 @@ public class Estudiante {
     private  int celular;
     private  boolean estudiante;
 
+
     public Estudiante(String nombre, String apellido, int celular, boolean estudiante) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -42,4 +43,5 @@ public class Estudiante {
                 ", estudiante=" + estudiante +
                 '}';
     }
+
 }

@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText etNombre,etApellido, etCelular;
     private Button btnRegistrar;
     private Switch swEstudiante;
+
+    private Estudiante estudiante;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +27,12 @@ public class MainActivity extends AppCompatActivity {
         etCelular=findViewById(R.id.etCelular);
         btnRegistrar=findViewById(R.id.btnRegistrar);
         swEstudiante=findViewById(R.id.swEstudiante);
+    }
+    private void ObtenerInformacion(){
+        String nombre= etNombre.getText().toString();
+        String apellido= etApellido.getText().toString();
+        int celular = Integer.parseInt(etCelular.getText().toString());
+        boolean esEstudiante=swEstudiante.isChecked();
+        estudiante=new Estudiante(nombre, apellido, celular, esEstudiante);
     }
 }
