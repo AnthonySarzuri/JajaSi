@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JajaSi</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="etNombre">Nombre</string>
+    <string name="etApellido">Apellido</string>
+    <string name="etCelular">Celular</string>
+    <string name="swEstudiante">Estudiante</string>
+</resources>
